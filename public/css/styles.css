@@ -1,0 +1,64 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree ../../../vendor/assets/stylesheets/.
+ *= require_tree .
+ *= require_self
+ //= depend_on_asset "bootstrap/glyphicons-halflings-regular.eot"
+ //= depend_on_asset "bootstrap/glyphicons-halflings-regular.woff"
+ //= depend_on_asset "bootstrap/glyphicons-halflings-regular.ttf"
+ //= depend_on_asset "bootstrap/glyphicons-halflings-regular.svg"
+ */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu|Montserrat|Roboto+Slab);
+@import "bootstrap";
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+body {
+	background-color: #FCFCFC; 
+}
+h1 {
+	font-size: 4em;
+	font-family: 'Ubuntu';
+	margin-bottom: 20px;
+}
+ul {
+	list-style-type: none;
+}
+.fweet {
+	padding: 10px;
+	border: solid #666666 1px;
+	font-family: 'Ubuntu';
+}
+.username {
+	color: #666666;
+}
+.content {
+	font-size: 30px;
+}
+.fweet_container {
+	height: auto;
+	width: auto;
+}
+.input {
+	height: 60px;
+	font-family: 'Ubuntu';
+	font-size: 30px;
+}
+#submit {
+	height: 60px;
+	margin-bottom: 15px;
+}
+
+
+
+
+
+

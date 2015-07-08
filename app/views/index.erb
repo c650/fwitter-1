@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
     <title>Fwitter (any similarities to Twitter are purely coincidental - please do not sue)</title>
   </head>
   
   <body>
-    <h1>Welcome to Fwitter!</h1>
-    <h3>All the Fweets</h3>
-    <ul>
-      <% @fweets.each do |fweet| %>
-        <li><%= "#{fweet.user} says: #{fweet.content}" %> </li>
-      <% end %>
-    </ul>
-    
-    <h3>Make a New Fweet!</h3>
-    <form action="/" method="POST">
-      <input type="text" name="user" placeholder="username">
-      <input type="text" name="fweet" placeholder="awesome fweet">
-      <input type="submit" value="Fweet at Us!!">
-    </form>
-    
+    <div class="container">
+      <h1>Welcome to Fwitter!</h1>
+
+      <form id="new_fweet" action="/" method="POST">
+        <input class="input" type="text" name="user" placeholder="username">
+        <input class="input" type="text" name="fweet" placeholder="fweet">
+        <input id="submit" class="btn btn-default"type="submit" value="Fweet at Us!!">
+      </form>
+      
+      <div class="fweet_container">
+      <ul>
+        <% @fweets = @fweets.reverse %>
+        <% @fweets.each do |fweet| %>
+            <li class="fweet">
+              <p class="username"><%= "#{fweet.user}"%></p>
+              <p class="content"><%= "#{fweet.content}" %></p>
+            </li>
+        <% end %>
+      </ul>
+      </div>
+      </div>
   </body>
 </html>
