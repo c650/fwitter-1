@@ -22,12 +22,16 @@
 @import "bootstrap";
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
 body {
-	background-color: #FCFCFC; 
+	background-color: #F5F8FA; 
 }
 h1 {
 	font-size: 4em;
 	font-family: 'Ubuntu';
 	margin-bottom: 20px;
+	color: #55ACEE;
+}
+#top {
+	background-color: #FFFFFF;
 }
 ul {
 	list-style-type: none;
@@ -37,13 +41,16 @@ ul {
 	border: solid #666666 1px;
 	font-family: 'Ubuntu';
 }
+.fweet:hover {
+	background-color: #F0F0F0;
+}
 .username {
 	color: #666666;
 }
 .content {
 	font-size: 30px;
 }
-.fweet_container {
+#fweet_container {
 	height: auto;
 	width: auto;
 }
@@ -55,6 +62,10 @@ ul {
 #submit {
 	height: 60px;
 	margin-bottom: 15px;
+}
+#twitter_icon {
+	height: 50px;
+	width: auto;
 }
 
 
