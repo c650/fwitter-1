@@ -30,9 +30,6 @@ h1 {
 	margin-bottom: 20px;
 	color: #55ACEE;
 }
-#top {
-	background-color: #FFFFFF;
-}
 ul {
 	list-style-type: none;
 }
@@ -67,8 +64,13 @@ ul {
 	height: 50px;
 	width: auto;
 }
-
-
+.status_bar li {
+	list-style-type: none;
+	display: inline-block;
+}
+#home_link:hover {
+	text-decoration: none;
+}
 
 
 
